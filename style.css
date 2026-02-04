@@ -1,13 +1,16 @@
+html{margin:0;padding:0;}
+
 body {
-        padding: 0 2px;
-        background: #ccc;
-        font-family: Google Sans, sans-serif;
+        padding: 0;
+        background: #ddd!important;
+        font-family: "Google Sans", sans-serif!important;
+        font-size:12pt!important;
         margin: 0px auto;
         max-width: 1920px;
     }
 
     label {
-        padding: 0.25em 0;
+        padding: 0;
         margin: 0;
     }
 
@@ -24,17 +27,16 @@ body {
         overflow-x: hidden;
         display: block;
         max-height: 110px;
-        padding: 2px 12px 2px 4px;
+        padding: 2px 8px 2px 4px;
         text-align: justify;
         line-height: 90%;
     }
 
     /* fanaberia, inny styl dla tagów wyszukiwania */
     #tagi .tekst {
-        font-family: monospace;
-        font-size: 0.75em;
-        line-height: 16px;
-        color: #777;
+        font-size: 0.8em;
+        line-height: 18px;
+        color: #888;
     }
 
     .text-gray {
@@ -49,8 +51,8 @@ body {
         background-color: #fff;
         color: #0059A3;
         border: 1px solid #0059A3;
-        padding: 6px 14px;
-        font-size: 16px;
+        padding: 4px 12px;
+        font-size: 1rem;
         border-radius: 4px;
         cursor: pointer;
     }
@@ -61,19 +63,18 @@ body {
     }
 
     .btn-kopiuj:active {
-        background-color: #09243b;
-        transform: scale(95%);
+        background-color: #024073;
     }
 
     #moduleList {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         gap: 8px;
-        margin-bottom: 2px;
+        margin-bottom: 4px;
     }
 
     #moduleList button {
-        width: 210px;
+        width: 220px;
         min-height: 45px;
         display: flex;
         align-items: center;
@@ -81,13 +82,13 @@ body {
         padding: 4px;
         border: 1px solid #c0c0c0;
         background-color: #f8f8f8;
-        font-size: 14px;
-        text-align: left;
+        font-size: 13px;
+/*        text-align: left;*/
     }
 
     #moduleList button:hover {
         border-color: #000;
-        background-color: #e3e3e3;
+        background-color: #fff;
     }
 
     #moduleList button img {
@@ -160,15 +161,13 @@ body {
 
 
     .rodzic>p {
-        margin: 20px 0 12px;
+        margin: 12px 0 8px;
         padding: 13px 20px 10px;
         border: 2px dotted #333;
-        box-shadow: 2px 2px 12px #ccc;
         border-radius: 6px;
         font-family: Calibri;
         font-size: 1rem;
         color: #000;
-        min-width: 120px;
         min-height: 46px;
     }
 
