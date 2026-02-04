@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="pl">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,35 +9,35 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
-    
-    <!-- JS -->
-     <script src="scripts.js"></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
     <!-- Spis treści -->
-    <div class="w-100 p-1 sticky-top bg-dark"><a href="#">
+    <div class="w-100 p-1 sticky-top bg-dark">
+        <a href="#">
             <h6 class="m-0 p-3 text-center text-white"><strong>&#10506; Spis treści &#10506;</strong></h6>
-        </a></div>
-    <div class="row mx-auto col-12 px-3 bg-white my-0 d-flex flex-column shadow-sm">
-        <div class="row col-sm-12 p-0 mb-2 mx-auto">
+        </a>
+    </div>
+
+    <div class="row mx-auto col-12 p-2 bg-white my-0 d-flex flex-column shadow-sm">
+        <div class="row col-sm-12">
             <div class="col-sm-12 col-md-2 p-1">
-                <h4 class="h5 mt-2"><strong>Ogólne</strong></h4>
+                <h5>Ogólne</h5>
                 <ul class="spis-tresci pl-3">
                     <li><a href="#producenci">Linki do producentów</a></li>
                     <li><a href="#tagi">Tagi wyszukiwania</a></li>
-
                     <li><a href="#ciagi">Generator ciągów</a></li>
-
-
                 </ul>
             </div>
             <div class="col-sm-12 col-md-2">
-                <h4 class="h5 mt-2"><strong>Kamery Hikvision</strong></h4>
+                <h5>Kamery Hikvision</h5>
                 <ul class="spis-tresci pl-3">
                     <li><a href="#cechy">Kafelki cech</a></li>
                     <li><a href="#bubbles">Chmurki</a></li>
@@ -46,26 +46,25 @@
                     <li><a href="#lista-spec">Specyfikacja</a></li>
                     <li><a href="#kolejnosc">Kolejność opisów</a></li>
                     <li><a href="#material">Materiał kamer</a></li>
-
                 </ul>
             </div>
-
             <div class="col-sm-12 col-md-2 p-1">
-                <h4 class="h5 mt-2"><strong>Monitory</strong></h4>
+                <h5>Monitory</h5>
                 <ul class="spis-tresci">
                     <li><a href="#monitory">Ikonki cech monitorów</a></li>
-
                 </ul>
             </div>
         </div>
     </div>
+
+
     <!------------------------------------------------------------------------------------------------------------->
     <!----- LINKI DO PRODUCENTÓW ---------------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------------->
-    <div class="row mx-auto col-12 p-3 bg-white my-4 d-flex flex-row justify-content-center text-center" id="producenci">
-        <div class="col-12">
+    <div class="row mx-auto col-12 p-3 bg-white mt-4 flex-row justify-content-center text-center" id="producenci">
+        <div class="col-12 mb-2">
             <h2><strong>Linki do producentów</strong></h2>
-            <p class="small my-1 text-gray"><em>Generuje gotowy pełny link do naszej podstrony producenta, np. /producenci/hikvision</em></p>
+            <p class="text-gray">Generuje gotowy pełny link do naszej podstrony producenta, np. /producenci/hikvision</p>
         </div>
 
         <div class="element-do-kopiowania mx-3">
@@ -93,15 +92,15 @@
     <!------------------------------------------------------------------------------------------------------------->
     <!----- KLASY IP / IK ----------------------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------------->
-    <div class="row mx-auto col-12 px-0 pt-2 pb-4 border my-4 bg-white justify-content-center" id="ipik">
+    <div class="row mx-auto col-12 py-3 mt-4 bg-white justify-content-center" id="ipik">
         <div class="col-12">
-            <p class="text-center my-1 text-gray mb-2"><em>Kopiuje nawias np. (IP67) z tooltipem - dla rozszerzonego z linkiem do podstrony</em></p>
+            <p class="text-center text-gray">Kopiuje nawias np. (IP67) z tooltipem - dla rozszerzonego z linkiem do podstrony</p>
         </div>
         <h3 class="col-12 text-center mx-auto mt-0 mb-2 p-0 display-6">Klasy IP</h3>
         <!-- IP 20 -->
-        <div class="col-sm-1 row m-1 p-2 pb-0 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IP 20</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 20</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -109,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6 p-0 mx-0">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -119,9 +118,9 @@
         </div>
 
         <!-- IP 30 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IP 30</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 30</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -129,7 +128,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -139,9 +138,9 @@
         </div>
 
         <!-- IP 40 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IP 40</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 40</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -149,7 +148,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -159,9 +158,9 @@
         </div>
 
         <!-- IP 43 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IP 43</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 43</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -169,7 +168,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -179,9 +178,9 @@
         </div>
 
         <!-- IP 50 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IP 50</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 50</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -189,7 +188,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -199,9 +198,9 @@
         </div>
 
         <!-- IP 54 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IP 54</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 54</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -209,7 +208,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -219,9 +218,9 @@
         </div>
 
         <!-- IP 55 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IP 55</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 55</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -229,7 +228,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -239,9 +238,9 @@
         </div>
 
         <!-- IP 65 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IP 65</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 65</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -249,7 +248,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -259,9 +258,9 @@
         </div>
 
         <!-- IP 66 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IP 66</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 66</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -269,7 +268,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -279,9 +278,9 @@
         </div>
 
         <!-- IP 67 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IP 67</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 67</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -289,7 +288,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -299,9 +298,9 @@
         </div>
 
         <!-- IP 68 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IP 68</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 68</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -309,7 +308,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -322,9 +321,9 @@
         <!-- KLASY IK -->
         <h3 class="col-12 text-center mx-auto mt-4 p-0 display-6">Klasy IK</h3>
         <!-- IK 01 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IK 01</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 01</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -332,7 +331,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -342,9 +341,9 @@
         </div>
 
         <!-- IK 02 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IK 02</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 02</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -352,7 +351,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -362,9 +361,9 @@
         </div>
 
         <!-- IK 03 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IK 03</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 03</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -372,7 +371,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -382,8 +381,8 @@
         </div>
 
         <!-- IK 04 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IK 04</h3>
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 04</h4>
             <div class="col-sm-6 my-0 p-0">
                 <p class="mb-0 text-center">Skr</p>
                 <div class="element-do-kopiowania m-0 p-0">
@@ -392,7 +391,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -402,9 +401,9 @@
         </div>
 
         <!-- IK 05 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IK 05</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 05</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -412,7 +411,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -422,9 +421,9 @@
         </div>
 
         <!-- IK 06 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IK 06</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 06</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -432,7 +431,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -442,9 +441,9 @@
         </div>
 
         <!-- IK 07 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IK 07</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 07</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -452,7 +451,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -462,9 +461,9 @@
         </div>
 
         <!-- IK 08 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IK 08</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 08</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -472,7 +471,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -482,9 +481,9 @@
         </div>
 
         <!-- IK 09 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IK 09</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 09</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -492,7 +491,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -502,9 +501,9 @@
         </div>
 
         <!-- IK 10 -->
-        <div class="col-sm-1 row m-1 p-2 border border-dark rounded-050">
-            <h3 class="col-12 text-center my-0">IK 10</h3>
-            <div class="col-sm-6 p-0">
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 10</h4>
+            <div class="col-6">
                 <p class="mb-0 text-center">Skr:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -512,7 +511,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 p-0">
+            <div class="col-6">
                 <p class="mb-0 text-center">Roz:</p>
                 <div class="element-do-kopiowania m-0 p-0">
                     <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
@@ -526,12 +525,12 @@
     <!------------------------------------------------------------------------------------------------------------->
     <!----- KAFELKI CECH ------------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------------------------------->
-    <div class="row mx-auto col-12 p-4 bg-white border my-4 d-flex flex-column" id="cechy">
-        <h2 class="text-center mb-1" class="justify-content-center"><strong>Kafelki cech</strong></h2>
-        <p class="text-center mb-4 text-gray mb-1"><em>Kliknięcie kafelka z cechą skopiuje do schowka jego kod html do wklejenia na www.</em></p>
+    <div class="row mx-auto col-12 p-3 bg-white border mt-4 d-flex flex-column" id="cechy">
+        <h2 class="text-center" class="justify-content-center"><strong>Kafelki cech</strong></h2>
+        <p class="text-center text-gray">Kliknięcie kafelka z cechą skopiuje do schowka jego kod html do wklejenia na www.</p>
         <p class="mb-0">Struktura całego diva:</p>
         <!-- blok do kopiowanie całej struktury kontenera - na moje własne potrzeby, możecie usunąć -->
-        <textarea name="Wzor" id="" cols="50" rows="11" class="mb-4 p-2 ">
+        <textarea name="Wzor" id="" rows="8" class="p-3 my-0" style="font-size:0.9rem;">
 <!-- Kontener z kafelkami cech -->
 <div class="col-sm-12 col-lg-4 p-2 mx-auto my-auto text-center align-items-baseline">
     <!-- Rząd -->
@@ -543,7 +542,7 @@
     </textarea>
         <!-- koniec kontenera na własny użytek -->
 
-        <div id="moduleList" class="row col-12 mx-0 px-0">
+        <div id="moduleList" class="row col-12 mt-4 mx-0 px-0">
             <!-- tu skrypt generuje listę cech do kopiowania -->
         </div>
 
@@ -946,7 +945,7 @@
     <!------------------------------------------------------------------------------------------------------------->
     <!----- BĄBELKI DO KAMER -------------------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------------->
-    <div class="row mx-auto col-12 px-1 pt-4 my-4 d-flex flex-column modules rounded-175" style="background:#0e2948" id="bubbles">
+    <div class="row mx-auto col-12 px-1 pt-4 my-4 d-flex flex-column modules" style="background:#0e2948" id="bubbles">
         <h3 class="mx-0 mt-0 mb-2 p-0 display-6 text-white text-center"><strong>Bąbelki do opisu kamer</strong></h3>
         <div class="col-sm-2 text-center justify-content-center text-white w-100 p-0 mt-1 mb-4 mx-auto">
             <p class="text-white text-center mb-0">Główny div z granatowym tłem:</p>
@@ -1244,7 +1243,7 @@
     <div class="row mx-auto col-12 p-3 border my-4 bg-white justify-content-start" id="ciagi">
         <div class="col-12 mx-auto text-center mb-5">
             <h2><strong>Generator ciągów</strong></h2>
-            <p class="small my-1 text-gray"><em>Tworzy kopiowalny ciąg funkcji wybranych checkboxem.</em></p>
+            <p class="my-1 text-gray">Tworzy kopiowalny ciąg funkcji wybranych checkboxem.</p>
         </div>
         <div class="lista-ciagow col-sm-4">
             <h5 class="mb-2"><strong>Funkcje ogólne:</strong></h5>
@@ -1336,11 +1335,11 @@
     <!------------------------------------------------------------------------------------------------------------->
     <!----- CECHY MONITORÓW --------------------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------------->
-    <div class="row col-12 mx-auto bg-white p-4 my-4 text-center pb-3" id="monitory" id="monitory">
+    <div class="row col-12 mx-auto bg-white p-4 my-4 text-center pb-3" id="monitory">
         <h2 class="mx-auto"><strong>Cechy monitorów</strong></h2>
         <div class="row mt-2 d-flex justify-content-center align-items-stretch">
             <div class="col-12 text-center mb-3">
-                <p class="small my-1 text-gray"><em>Blok do skopiowania - kod boxu z ramką itp., do środka wklejamy konkretną ikonkę.</em></p>
+                <p class="my-1 text-gray"><em>Blok do skopiowania - kod boxu z ramką itp., do środka wklejamy konkretną ikonkę.</em></p>
                 <code class="code-block w-100 p-3 rounded">&lt;div class="col-sm-12 col-md-6 col-xl-3 mx-0 my-1 px-2 justify-content-center text-center"&gt;&lt;div class="bg-white border rounded-100 shadow-sm mb-2 h-100"&gt;&lt;/div&gt;&lt;/div&gt;</code>
             </div>
 
@@ -2052,120 +2051,7 @@
             </div>
         </div>
     </div>
-
-
-
-
-    <!---------------------------------------------------------------------------->
-    <!------------------ SKRYPTY ------------------------------------------------->
-    <!---------------------------------------------------------------------------->
-    <script>
-        ///////////////////////////////////////////////////////////////////////////////
-        //////////////////////////// KOPIOWANIE CECH //////////////////////////////////
-        ///////////////////////////////////////////////////////////////////////////////
-        const przyciski = document.querySelectorAll('.btn-kopiuj');
-
-        przyciski.forEach(button => {
-            button.addEventListener('click', () => {
-                // Pobieramy zawartość HTML, a nie tylko tekst
-                const tekst = button.parentElement.querySelector('.tekst').innerHTML;
-                navigator.clipboard.writeText(tekst).catch(err => {
-                    console.error('Błąd kopiowania do schowka:', err);
-                });
-            });
-        });
-
-
-        let modulesWithComments = [];
-
-        function initModuleList(containerId, listId) {
-            const container = document.getElementById(containerId);
-            const list = document.getElementById(listId);
-            list.innerHTML = '';
-            modulesWithComments = [];
-
-            const children = Array.from(container.childNodes);
-            let pendingComment = null;
-
-            children.forEach(node => {
-                if (node.nodeType === Node.COMMENT_NODE) {
-                    pendingComment = node.data.trim();
-                } else if (node.nodeType === Node.ELEMENT_NODE) {
-                    modulesWithComments.push({
-                        element: node,
-                        comment: pendingComment
-                    });
-                    pendingComment = null;
-                }
-            });
-
-            modulesWithComments.forEach((mod, index) => {
-                let labelText = mod.comment || ('Moduł ' + (index + 1));
-
-                const btn = document.createElement('button');
-                btn.type = 'button';
-                btn.title = "Kliknij, aby skopiować kod modułu";
-
-                // Pobieramy obrazek z modułu
-                const imgInModule = mod.element.querySelector('img');
-                if (imgInModule) {
-                    const img = document.createElement('img');
-                    img.src = imgInModule.src;
-                    img.alt = imgInModule.alt || '';
-                    img.style.display = 'block';
-                    img.style.width = '48px'; // możesz dostosować rozmiar
-                    btn.appendChild(img);
-                }
-
-                // Tekst labela
-                btn.appendChild(document.createTextNode(labelText));
-
-                btn.addEventListener('click', () => copyModuleCode(index));
-
-                list.appendChild(btn);
-            });
-
-        }
-
-        function copyModuleCode(index) {
-            const mod = modulesWithComments[index];
-            if (!mod) return;
-
-            let code = '';
-            if (mod.comment) {
-                code += `<!--${mod.comment}-->\n`;
-            }
-            code += mod.element.outerHTML;
-
-            navigator.clipboard.writeText(code).catch(err => {
-                console.error('Błąd kopiowania do schowka:', err);
-            });
-        }
-
-        window.onload = () => {
-            initModuleList('modulesContainer', 'moduleList');
-        };
-
-        ///////////////////////////////////////////////////////////////////////////////
-        ////////////////////////// GENEROWANIE CIĄGÓW /////////////////////////////////
-        ///////////////////////////////////////////////////////////////////////////////
-        const button = document.getElementById('generateBtn');
-        const resultDiv = document.getElementById('result');
-
-        button.addEventListener('click', () => {
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            const selectedValues = [];
-
-            checkboxes.forEach(cb => {
-                if (cb.checked) {
-                    selectedValues.push(cb.value);
-                }
-                // Czyścimy zaznaczenie
-                cb.checked = false;
-            });
-
-            resultDiv.textContent = selectedValues.join(', ');
-        });
-    </script>
+    <!-- JS -->
+    <script src="scripts.js"></script>
 </body>
 </html>
