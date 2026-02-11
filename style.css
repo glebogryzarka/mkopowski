@@ -1,191 +1,232 @@
-html{margin:0;padding:0;}
+html {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-        padding: 0;
-        background: #ddd!important;
-        font-family: "Google Sans", sans-serif!important;
-        font-size:12pt!important;
-        margin: 0px auto;
-        max-width: 1920px;
-    }
+    padding: 0;
+    background: #ddd !important;
+    font-family: "Google Sans", sans-serif !important;
+    font-size: 12pt !important;
+    margin: 0px auto;
+    max-width: 1920px;
+}
 
-    label {
-        padding: 0;
-        margin: 0;
-    }
+label {
+    padding: 0;
+    margin: 0;
+}
 
+.element-do-kopiowania {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
 
-    .element-do-kopiowania {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin: 8px 0;
-    }
+.tekst {
+    margin: 0;
+    overflow-x: hidden;
+    display: block;
+    max-height: 110px;
+    padding: 2px 8px 2px 4px;
+    text-align: justify;
+    line-height: 90%;
+}
 
-    .tekst {
-        margin: 0;
-        overflow-x: hidden;
-        display: block;
-        max-height: 110px;
-        padding: 2px 8px 2px 4px;
-        text-align: justify;
-        line-height: 90%;
-    }
+/* fanaberia, inny styl dla tagów wyszukiwania */
+#tagi .tekst {
+    font-size: 0.8em;
+    line-height: 18px;
+    color: #888;
+}
 
-    /* fanaberia, inny styl dla tagów wyszukiwania */
-    #tagi .tekst {
-        font-size: 0.8em;
-        line-height: 18px;
-        color: #888;
-    }
+.text-gray {
+    color: #606060;
+}
 
-    .text-gray {
-        color: #606060;
-    }
+.modules .tekst {
+    all: unset;
+}
 
-    .modules .tekst {
-        all: unset;
-    }
+.btn-kopiuj {
+    background-color: #fff;
+    color: #0059A3;
+    border: 1px solid #0059A3;
+    padding: 4px 12px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-    .btn-kopiuj {
-        background-color: #fff;
-        color: #0059A3;
-        border: 1px solid #0059A3;
-        padding: 4px 12px;
-        font-size: 1rem;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+.btn-kopiuj:hover {
+    background-color: #0059A3;
+    color: #FFF;
+}
 
-    .btn-kopiuj:hover {
-        background-color: #0059A3;
-        color: #FFF;
-    }
+.btn-kopiuj:active {
+    background-color: #024073;
+}
 
-    .btn-kopiuj:active {
-        background-color: #024073;
-    }
+#moduleList {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 8px;
+    margin-bottom: 4px;
+}
 
-    #moduleList {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        gap: 8px;
-        margin-bottom: 4px;
-    }
+#moduleList button {
+    width: 220px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px;
+    border: 1px solid #c0c0c0;
+    background-color: #f8f8f8;
+    font-size: 13px;
+    /*        text-align: left;*/
+}
 
-    #moduleList button {
-        width: 220px;
-        min-height: 45px;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        padding: 4px;
-        border: 1px solid #c0c0c0;
-        background-color: #f8f8f8;
-        font-size: 13px;
-/*        text-align: left;*/
-    }
+#moduleList button:hover {
+    border-color: #000;
+    background-color: #fff;
+}
 
-    #moduleList button:hover {
-        border-color: #000;
-        background-color: #fff;
-    }
+#moduleList button img {
+    margin-right: 8px;
+}
 
-    #moduleList button img {
-        margin-right: 8px;
-    }
+textarea {
+    font-family: monospace;
+    line-height: 14px;
+    color: #5d5d5d;
+}
 
-    textarea {
-        font-family: monospace;
-        line-height: 14px;
-        color: #5d5d5d;
-    }
+#spec .tekst {
+    all: unset;
+    font-size: 0.8em;
+}
 
-    #spec .tekst {
-        all: unset;
-        font-size: 0.8em;
-    }
+.rounded-050 {
+    border-radius: 0.5rem !important;
+}
 
-    .rounded-050 {
-        border-radius: 0.5rem !important;
-    }
+.rounded-125 {
+    border-radius: 1.25rem !important;
+}
 
-    .rounded-125 {
-        border-radius: 1.25rem !important;
-    }
+.rounded-150 {
+    border-radius: 1.5rem !important;
+}
 
-    .rounded-150 {
-        border-radius: 1.5rem !important;
-    }
+.rounded-175 {
+    border-radius: 1.75rem !important;
+}
 
-    .rounded-175 {
-        border-radius: 1.75rem !important;
-    }
-
-    .bubble {
-        margin: 0 10px 40px;
-        justify-content: center;
-        text-align: center;
-        box-sizing: border-box;
-        align-self: stretch;
-    }
-
-
-    .bubble>.tekst>.col-md-3 {
-        max-width: none;
-         !important height: 100%;
-    }
-
-    .floatingBox {
-        position: absolute;
-        left: 20%;
-        top: 1px;
-        font-size: 0.8em;
-        padding: 3px 0 1px;
-        color: #FFF;
-        width: 60%;
-        text-shadow: 0 0 8px #000;
-        margin: 0 auto;
-        border: 2px solid #000;
-        z-index: 500;
-    }
-
-    .lista-ciagow p {
-        margin: 0;
-        padding: 0;
-    }
-
-    .lista-ciagow span {
-        margin-left: 9px;
-    }
+.bubble {
+    margin: 0 10px 40px;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    align-self: stretch;
+}
 
 
-    .rodzic>p {
-        margin: 12px 0 8px;
-        padding: 13px 20px 10px;
-        border: 2px dotted #333;
-        border-radius: 6px;
-        font-family: Calibri;
-        font-size: 1rem;
-        color: #000;
-        min-height: 46px;
-    }
+.bubble > .tekst > .col-md-3 {
+    max-width: none;
+     !important height: 100%;
+}
 
-    .thead {
-        background: #0c3254;
-        color: #FFF;
-    }
+.floatingBox {
+    position: absolute;
+    left: 20%;
+    top: 1px;
+    font-size: 0.8em;
+    padding: 3px 0 1px;
+    color: #FFF;
+    width: 60%;
+    text-shadow: 0 0 8px #000;
+    margin: 0 auto;
+    border: 2px solid #000;
+    z-index: 500;
+}
 
-    .genBtn {
-        margin: 0 auto;
-        border: 1px solid #333;
-        border-radius: 100px;
-        padding: 12px 36px;
-        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
-        background: #eee;
-    }
+.lista-ciagow p {
+    margin: 0;
+    padding: 0;
+}
 
-    .genBtn:hover {
-        box-shadow: none;
-        background: #f1f1f1;
-    }
+.lista-ciagow span {
+    margin-left: 9px;
+}
+
+
+.rodzic > p {
+    margin: 12px 0 8px;
+    padding: 13px 20px 10px;
+    border: 2px dotted #333;
+    border-radius: 6px;
+    font-family: Calibri;
+    font-size: 1rem;
+    color: #000;
+    min-height: 46px;
+}
+
+.thead {
+    background: #0c3254;
+    color: #FFF;
+}
+
+.genBtn {
+    margin: 0 auto;
+    border: 1px solid #222;
+    border-radius: 100px;
+    padding: 12px 36px;
+    background: #f4f4f4;
+}
+
+.genBtn:hover {
+    background: #e6e6e6;
+}
+
+
+
+.spec-textarea {
+    width: 100%;
+    height: 250px;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    font-family: monospace;
+    font-size: 14px;
+    resize: vertical;
+}
+
+
+button {
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.spec-primary-btn {
+    background: #2563eb;
+    color: white;
+}
+
+
+.spec-copy-btn {
+    background: #16a34a;
+    color: white;
+    margin-left: 10px;
+}
+
+
+.spec-row {
+    margin-bottom: 25px;
+}
