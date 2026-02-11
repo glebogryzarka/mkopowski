@@ -85,22 +85,129 @@
         };
 
         ///////////////////////////////////////////////////////////////////////////////
-        ////////////////////////// GENEROWANIE CIĄGÓW /////////////////////////////////
+        ////////////////////////// DYNAMICZNE GENEROWANIE CIĄGÓW /////////////////////
         ///////////////////////////////////////////////////////////////////////////////
-        const button = document.getElementById('generateBtn');
+
         const resultDiv = document.getElementById('result');
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const copyBtn = document.getElementById('copyBtn'); // zakładamy, że w HTML jest przycisk Kopiuj
 
-        button.addEventListener('click', () => {
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        // Funkcja do aktualizacji wyniku dynamicznie
+        function updateResult() {
             const selectedValues = [];
-
             checkboxes.forEach(cb => {
                 if (cb.checked) {
                     selectedValues.push(cb.value);
                 }
-                // Czyścimy zaznaczenie
-                cb.checked = false;
+            });
+            resultDiv.textContent = selectedValues.join(', ');
+        }
+
+        // Nasłuchujemy zmiany każdego checkboxa
+        checkboxes.forEach(cb => {
+            cb.addEventListener('change', updateResult);
+        });
+
+        // Funkcja kopiowania i czyszczenia
+        copyBtn.addEventListener('click', () => {
+            if (resultDiv.textContent) {
+                navigator.clipboard.writeText(resultDiv.textContent)
+                    .then(() => {
+                        // Czyścimy zaznaczenia i wynik
+                        checkboxes.forEach(cb => cb.checked = false);
+                        resultDiv.textContent = '';
+                    })
+                    .catch(err => {
+                        console.error('Błąd przy kopiowaniu: ', err);
+                    });
+            } else {}
+        });
+
+        ///////////////////////////////////////////////////////////////////////////////
+        ////////////////////////// AKTUALIZACJA SPECYFIKACJI //////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////
+
+        document.getElementById('convertBtn').addEventListener('click', function () {
+            const input = document.getElementById('input').value;
+            if (!input.trim()) {
+                alert('Wklej najpierw HTML tabeli.');
+                return;
+            }
+
+
+            const temp = document.createElement('div');
+            temp.innerHTML = input;
+
+
+            let wrapper = temp.querySelector('div.table-responsive');
+            let table = wrapper ? wrapper.querySelector('table.table') : temp.querySelector('table.table');
+            if (!table) {
+                alert('Nie znaleziono tabeli z klasą table.');
+                return;
+            }
+
+
+            const sections = [];
+            let currentSection = null;
+
+
+[...table.querySelectorAll('thead, tbody')].forEach(section => {
+                if (section.tagName === 'THEAD') {
+                    const tr = section.querySelector('tr');
+                    if (!tr) return;
+                    tr.className = 'thead';
+                    currentSection = [tr];
+                    sections.push(currentSection);
+                } else if (section.tagName === 'TBODY') {
+                    const rows = [...section.querySelectorAll('tr')];
+                    rows.forEach(r => r.className = 'tbody');
+                    if (currentSection) currentSection.push(...rows);
+                }
             });
 
-            resultDiv.textContent = selectedValues.join(', ');
+
+            sections.forEach(sec => {
+                if (sec.length > 1) sec[sec.length - 1].classList.add('last');
+            });
+
+
+            // Zachowaj wcięcia z oryginalnego HTML
+            const originalLines = input.split('\n');
+            const indentMap = new Map();
+            originalLines.forEach(line => {
+                const trimmed = line.trimStart();
+                if (trimmed.startsWith('<tr')) {
+                    const indent = line.match(/^\s*/)[0];
+                    const key = trimmed.replace(/\s+/g, '');
+                    indentMap.set(key, indent);
+                }
+            });
+
+
+            table.innerHTML = '';
+            sections.forEach(sec => {
+                sec.forEach(tr => {
+                    const key = tr.outerHTML.replace(/\s+/g, '');
+                    const indent = indentMap.get(key) || '';
+                    table.appendChild(document.createTextNode(indent));
+                    table.appendChild(tr);
+                    table.appendChild(document.createTextNode('\n'));
+                });
+            });
+
+
+            const resultHTML = wrapper ? wrapper.outerHTML : table.outerHTML;
+            document.getElementById('output').value = resultHTML;
+        });
+
+
+        document.getElementById('copySpec').addEventListener('click', function () {
+            const output = document.getElementById('output');
+            if (!output.value.trim()) {
+                alert('Nie ma nic do skopiowania 🙂');
+                return;
+            }
+            output.select();
+            document.execCommand('copy');
+            alert('Skopiowano do schowka!');
         });
