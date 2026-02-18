@@ -1,0 +1,1774 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ściągi WWW</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spis treści -->
+    <div class="p-1 sticky-top bg-dark mx-auto w-100">
+        <a href="#">
+            <h6 class="m-0 p-1 text-center text-white">&uarr;&nbsp;&nbsp;wróć do spisu treści</h6>
+        </a>
+    </div>
+
+    <div class="row mx-auto col-12 p-2 bg-white my-0 d-flex flex-column shadow-sm">
+        <div class="row col-sm-12">
+            <div class="col-sm-12 col-md-2 p-1">
+                <h5>Ogólne</h5>
+                <ul class="spis-tresci pl-3">
+                    <li><a href="#producenci">Linki do producentów</a></li>
+                    <li><a href="#ipik">Klasy IP + IK</a></li>
+                    <li><a href="#tagi">Tagi wyszukiwania</a></li>
+                    <li><a href="#ciagi">Generator ciągów</a></li>
+                    <li><a href="#nowaSpec">Konwerter starej specyfikacji</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <h5>Kamery Hikvision</h5>
+                <ul class="spis-tresci pl-3">
+                    <li><a href="#cechy">Kafelki cech</a></li>
+                    <li><a href="#bubbles">Chmurki</a></li>
+                    <li><a href="#material">Materiał wykonania</a></li>
+                    <li><a href="#sekcje-opisowe">Sekcje opisowe</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-2 p-1">
+                <h5>Monitory</h5>
+                <ul class="spis-tresci">
+                    <li><a href="#monitory">Ikonki cech monitorów</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------->
+    <!----- LINKI DO PRODUCENTÓW ---------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------->
+    <div class="row mx-auto col-12 p-3 bg-white mt-3 flex-row justify-content-center text-center" id="producenci">
+        <div class="col-12 mb-2">
+            <h2><strong>Linki do producentów</strong></h2>
+            <p class="text-gray my-2">Generuje gotowy pełny link do naszej podstrony producenta, np. /producenci/hikvision</p>
+        </div>
+        
+        <!-- HIKVISION -->
+        <div class="element-do-kopiowania mx-3">
+            <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+            <p class="tekst"><a href="https://www.napad.pl/producenci/hikvision" title="Przejdź do zakładki producenta Hikvision" target="_blank">Hikvision</a></p>
+        </div>
+
+        <!-- AJAX -->
+        <div class="element-do-kopiowania mx-3">
+            <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+            <p class="tekst"><a href="https://www.napad.pl/producenci/ajax" title="Przejdź do zakładki producenta AJAX" target="_blank">AJAX</a></p>
+        </div>
+        
+        
+
+        <div class="element-do-kopiowania mx-3">
+            <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+            <p class="tekst"><a href="https://www.napad.pl/producenci/ag-neovo" title="Przejdź do zakładki producenta AG Neovo" target="_blank">AG Neovo</a></p>
+        </div>
+
+        <div class="element-do-kopiowania mx-3">
+            <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+            <p class="tekst"><a href="https://www.napad.pl/producenci/gorke" title="Przejdź do zakładki producenta GORKE" target="_blank">GORKE</a></p>
+        </div>
+
+        <div class="element-do-kopiowania mx-3">
+            <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+            <p class="tekst"><a href="https://www.napad.pl/producenci/ipox" title="Przejdź do zakładki producenta IPOX" target="_blank">IPOX</a></p>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------->
+    <!----- KLASY IP / IK ----------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------->
+    <div class="row mx-auto col-12 py-3 mt-3 bg-white justify-content-center" id="ipik">
+        <div class="col-12">
+            <p class="text-center text-gray">Kopiuje nawias np. (IP67) z tooltipem; dla rozszerzonego (Roz.) dodatkowo z odnośnikiem do artykułu o IP/IK</p>
+        </div>
+        <h3 class="col-12 text-center mx-auto mt-0 mb-2 p-0 display-6">Klasy IP</h3>
+        <!-- IP 20 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 20</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych palcem; ochrona przed obcymi ciałami stałymi o średnicy 12,5 mm i większej; brak ochrony przed wodą." class="text-primary cursor-pointer">IP20</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6 p-0 mx-0">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych palcem; ochrona przed obcymi ciałami stałymi o średnicy 12,5 mm i większej; brak ochrony przed wodą.">IP20</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IP 30 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 30</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych narzędziem; ochrona przed obcymi ciałami stałymi o średnicy 2,5 mm i większej; brak ochrony przed wodą." class="text-primary cursor-pointer">IP30</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych narzędziem; ochrona przed obcymi ciałami stałymi o średnicy 2,5 mm i większej; brak ochrony przed wodą.">IP30</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IP 40 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 40</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed obcymi ciałami stałymi o średnicy 1 mm i większej; brak ochrony przed wodą." class="text-primary cursor-pointer">IP40</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed obcymi ciałami stałymi o średnicy 1 mm i większej; brak ochrony przed wodą.">IP40</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IP 43 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 43</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed obcymi ciałami stałymi o średnicy 1 mm i większej; ochrona przed natryskiwaniem wodą pod dowolnym kątem do 60° od pionu z każdej strony." class="text-primary cursor-pointer">IP43</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed obcymi ciałami stałymi o średnicy 1 mm i większej; ochrona przed natryskiwaniem wodą pod dowolnym kątem do 60° od pionu z każdej strony">IP43</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IP 50 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 50</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; brak ochrony przed wodą." class="text-primary cursor-pointer">IP50</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; brak ochrony przed wodą.">IP50</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IP 54 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 54</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; ochrona przed bryzgami wody z dowolnego kierunku." class="text-primary cursor-pointer">IP54</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; ochrona przed bryzgami wody z dowolnego kierunku.">IP54</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IP 55 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 55</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; ochrona przed strugą wody (12,5 l/min) laną na obudowę z dowolnej strony." class="text-primary cursor-pointer">IP55</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; ochrona przed strugą wody (12,5 l/min) laną na obudowę z dowolnej strony.">IP55</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IP 65 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 65</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed kroplami padającymi pod dowolnym kątem, ze wszystkich stron." class="text-primary cursor-pointer">IP65</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed kroplami padającymi pod dowolnym kątem, ze wszystkich stron.">IP65</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IP 66 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 66</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona pyłoszczelna i przed dostępem do części niebezpiecznych drutem; ochrona przed silną strugą wody (100 l/min) laną na obudowę z dowolnej strony." class="text-primary cursor-pointer">IP66</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona pyłoszczelna i przed dostępem do części niebezpiecznych drutem; ochrona przed silną strugą wody (100 l/min) laną na obudowę z dowolnej strony.">IP66</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IP 67 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 67</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed skutkami krótkotrwałego zanurzenia w wodzie (30 min na głębokość 0,15 m powyżej wierzchu obudowy lub 1 m powyżej spodu dla obudów niższych niż 0,85 m)." class="text-primary cursor-pointer">IP67</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed skutkami krótkotrwałego zanurzenia w wodzie (30 min na głębokość 0,15 m powyżej wierzchu obudowy lub 1 m powyżej spodu dla obudów niższych niż 0,85 m).">IP67</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IP 68 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IP 68</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed skutkami ciągłego zanurzenia w wodzie (obudowa ciągle zanurzona w wodzie, w warunkach uzgodnionych między producentem i użytkownikiem, lecz surowszych niż według cyfry 7)" class="text-primary cursor-pointer">IP68</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed skutkami ciągłego zanurzenia w wodzie (obudowa ciągle zanurzona w wodzie, w warunkach uzgodnionych między producentem i użytkownikiem, lecz surowszych niż według cyfry 7)">IP68</a>)</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- KLASY IK -->
+        <h3 class="col-12 text-center mx-auto mt-4 p-0 display-6">Klasy IK</h3>
+        <!-- IK 01 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 01</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="Odporność na udar o energii 0,15 J (upadek obiektu o wadze 200 g z wysokości 7,5 cm)" class="text-primary cursor-pointer">IK01</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 0,15 J (upadek obiektu o wadze 200 g z wysokości 7,5 cm)." class="text-primary">IK01</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IK 02 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 02</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="Odporność na udar o energii 0,2 J (upadek obiektu o wadze 200 g z wysokości 10 cm)" class="text-primary cursor-pointer">IK02</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 0,2 J (upadek obiektu o wadze 200 g z wysokości 10 cm)." class="text-primary">IK02</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IK 03 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 03</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="Odporność na udar o energii 0,35 J (upadek obiektu o wadze 200 g z wysokości 17,5 cm)" class="text-primary cursor-pointer">IK03</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 0,35 J (upadek obiektu o wadze 200 g z wysokości 17,5 cm)." class="text-primary">IK03</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IK 04 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 04</h4>
+            <div class="col-sm-6 my-0 p-0">
+                <p class="mb-0 text-center">Skr</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="Odporność na udar o energii 0,5 J (upadek obiektu o wadze 200 g z wysokości 25 cm)" class="text-primary cursor-pointer">IK04</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 0,5 J (upadek obiektu o wadze 200 g z wysokości 25 cm)." class="text-primary">IK04</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IK 05 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 05</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="odporność na udar o energii 0,7 J (upadek obiektu o wadze 200 g z wysokości 35 cm)" class="text-primary cursor-pointer">IK05</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 0,7 J (upadek obiektu o wadze 200 g z wysokości 35 cm)." class="text-primary">IK05</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IK 06 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 06</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="odporność na udar o energii 1 J (upadek obiektu o wadze 500 g z wysokości 20 cm)" class="text-primary cursor-pointer">IK06</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 1 J (upadek obiektu o wadze 500 g z wysokości 20 cm)." class="text-primary">IK06</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IK 07 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 07</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="odporność na udar o energii 2 J (upadek obiektu o wadze 500 g z wysokości 40 cm)" class="text-primary cursor-pointer">IK07</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 2 J (upadek obiektu o wadze 500 g z wysokości 40 cm)." class="text-primary">IK07</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IK 08 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 08</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="Odporność na udar o energii 5 J (upadek obiektu o wadze 1,7 kg z wysokości 29,5 cm)." class="text-primary cursor-pointer">IK08</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 5 J (upadek obiektu o wadze 1,7 kg z wysokości 29,5 cm)." class="text-primary">IK08</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IK 09 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 09</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" data-placement="top" data-html="true" target="_blank" data-original-title="Odporność na udar o energii 10 J (upadek obiektu o wadze 5 kg z wysokości 20 cm)." class="text-primary cursor-pointer">IK09</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 10 J (upadek obiektu o wadze 5 kg z wysokości 20 cm).">IK09</a>)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IK 10 -->
+        <div class="row col-sm-1 m-1 py-1 px-0 border border-dark rounded-050">
+            <h4 class="col-12 text-center mb-0">IK 10</h4>
+            <div class="col-6">
+                <p class="mb-0 text-center">Skr:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<span data-toggle="tooltip" class="text-primary cursor-pointer" data-placement="top" data-html="true" data-original-title="- odporność na udar o energii 20 J (upadek obiektu o wadze 5 kg z wysokości 40 cm)">IK10</span>)</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p class="mb-0 text-center">Roz:</p>
+                <div class="element-do-kopiowania m-0 p-0">
+                    <button class="btn-kopiuj mx-auto"><i class="far fa-copy"></i></button>
+                    <p class="tekst" style="display:none;">(<a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="- odporność na udar o energii 20 J (upadek obiektu o wadze 5 kg z wysokości 40 cm)">IK10</a>)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------->
+    <!----- KAFELKI CECH ------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------------->
+    <div class="row mx-auto col-12 p-3 bg-white border mt-3 d-flex flex-column" id="cechy">
+        <h2 class="text-center" class="justify-content-center"><strong>Kafelki cech</strong></h2>
+        <p class="text-center text-gray">Kliknięcie kafelka z cechą skopiuje do schowka jego kod html do wklejenia na www.</p>
+        <p class="mb-0">Struktura całego diva:</p>
+        <!-- blok do kopiowanie całej struktury kontenera - na moje własne potrzeby, możecie usunąć -->
+        <textarea name="Wzor" id="" rows="8" class="p-3 my-0" style="font-size:0.9rem;">
+<!-- Kontener z kafelkami cech -->
+<div class="col-sm-12 col-lg-4 p-2 mx-auto my-auto text-center align-items-baseline">
+    <!-- Rząd -->
+    <div class="row justify-content-center align-items-center">
+        <!--///// Tu skopiowane moduły /////-->    
+    </div>    
+</div>
+<!-- Koniec kontenera z cechami -->
+    </textarea>
+        <!-- koniec kontenera na własny użytek -->
+
+        <div id="moduleList" class="row col-12 mt-4 mx-0 px-0">
+            <!-- tu skrypt generuje listę cech do kopiowania -->
+        </div>
+
+        <!-- Moduły do generowania -->
+        <div id="modulesContainer" class="row" style="display:none;">
+            <!-- Smart Hybrid Light -->
+            <div class="col-6 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Hikvision Smart Hybrid Light" data-original-title="Hikvision Smart Hybrid Light" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/sml.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- ACUSENSE -->
+            <div class="col-6 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Technologia AcuSense" data-original-title="Technologia AcuSense" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/acusense.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- COLOR VU -->
+            <div class="col-6 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Technologia ColorVu" data-original-title="Technologia ColorVu" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/colorvu.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- COLOR VU 3.0 -->
+            <div class="col-6 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Technologia ColorVu 3.0" data-original-title="Technologia ColorVu 3.0" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/colorvu3_xs.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- AcuSense 3.0 -->
+            <div class="col-6 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Technologia AcuSense 3.0" data-original-title="Technologia AcuSense 3.0" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/acusense3_xs.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- MD 3.0 -->
+            <div class="col-6 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Motion Detection 3.0" data-original-title="Motion Detection 3.0" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/md3.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+            <!-- Audio 2.0 -->
+            <div class="col-4 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Technologia Audio 2.0" data-original-title="Technologia Audio 2.0" class="img-fluid cursor-pointer mx-auto d-block" src="https://www.napad.pl/data/produkty/Hikvision/cechy/audio2_xs.png" alt="Cechy kamery" />
+            </div>
+
+            <!-- DARKFIGHTER -->
+            <div class="col-6 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Technologia DarkFighter" data-original-title="Technologia DarkFighter" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/darkfighter.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- EasyIP 4.0 -->
+            <div class="col-6 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Seria EasyIP 4.0" data-original-title="Seria EasyIP 4.0" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/easyip4_0.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- DeepinView -->
+            <div class="col-6 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Seria DeepinView" data-original-title="Seria DeepinView" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/deepinview.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- AI -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Technologie oparte na sztucznej inteligencji" data-original-title="Technologie oparte na sztucznej inteligencji" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/ai.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Motozoom -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Obiektyw zmienoogniskowy" data-original-title="Obiektyw zmienoogniskowy" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/moto.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Dwie ogniskowe -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Dwie ogniskowe w jednym obiektywie" data-original-title="Dwie ogniskowe w jednym obiektywie" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/varifocal.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Człowiek / pojazd -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Detekcja człowiek/pojazd" data-original-title="Detekcja człowiek/pojazd" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/czlowiek_pojazd.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Tylko Człowiek -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Detekcja człowieka" data-original-title="Detekcja człowieka" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/detekcja_czlowieka.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Filtrowanie alarmow -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Filtrowanie fałszywych alarmow" data-original-title="Filtrowanie fałszywych alarmow" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/filtr-falszywych.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Przysłona F1.0 -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Światłoczuła przysłona F1.0" data-original-title="Światłoczuła przysłona F1.0" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/f1_0.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Przysłona P Iris -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Przysłona P Iris" data-original-title="Przysłona P Iris" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/p_iris.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Kolor 24h -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Kolorowy obraz całą dobę" data-original-title="Kolorowy obraz całą dobę" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/24h_color.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Oświetlacz Dual -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Oświetlacz dualny" data-original-title="Oświetlacz dualny" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/smart_light.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Podczerwień -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Oświetlacz IR" data-original-title="Oświetlacz IR" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/ir_noc.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Ultra Low Light -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Praca w słabym oświetleniu" data-original-title="Praca w słabym oświetleniu" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/ultra_low_light.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Mikrofon -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Wbudowany mikrofon" data-original-title="Wbudowany mikrofon" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/mikrofon.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Dwa mikrofony -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Dwa wbudowane mikrofony" data-original-title="Dwa wbudowane mikrofony" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/dual_mic.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Dwukierunkowe audio -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Dwukierunkowe audio" data-original-title="Dwukierunkowe audio" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/2way-audio.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Aktywne odstraszanie -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Aktywne odstraszanie" data-original-title="Aktywne odstraszanie" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/odstraszanie.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Detekcja twarzy  -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Rozpoznawanie twarzy" data-original-title="Rozpoznawanie twarzy" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/face-cap.png" alt="Cecha urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- Rozpoznawanie twarzy  -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Rozpoznawanie twarzy" data-original-title="Rozpoznawanie twarzy" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/face-comp.png" alt="Cecha urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- Przekroczenie linii  -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Detekcja przekroczenia linii" data-original-title="Detekcja przekroczenia linii" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/line-cross.png" alt="Cecha urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- Detekcja wtargnięcia  -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Detekcja wtargnięcia" data-original-title="Detekcja wtargnięcia" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/intrusion.png" alt="Cecha urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- Inteligentne śledzenie -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Inteligentne śledzenie" data-original-title="Inteligentne śledzenie" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/smart-tracking.png" alt="Cecha urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- Alarm -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Alarm dźwiękowy" data-original-title="Kolorowy obraz całą dobę" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/alarm.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- H265 -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Kompresja H.265" data-original-title="Kompresja H.265" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/h265.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- H265+ -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Kompresja H.265+" data-original-title="Kompresja H.265+" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/h265p.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- WDR -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Szeroki zakres dynamiki" data-original-title="WDR - Szeroki zakres dynamiki" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/wdr.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- WDR 130 -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Szeroki zakres dynamiki" data-original-title="WDR - Szeroki zakres dynamiki" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/wdr130.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- WDR 140 -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Szeroki zakres dynamiki" data-original-title="WDR - Szeroki zakres dynamiki" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/wdr140.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+
+            <!--WDR 150 -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Szeroki zakres dynamiki" data-original-title="WDR - Szeroki zakres dynamiki" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/wdr150.png" alt="Cechy kamery" loading="lazy">
+            </div>
+
+
+            <!-- True WDR -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Szeroki zakres dynamiki" data-original-title="True WDR - Szeroki zakres dynamiki" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/truewdr.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+
+            <!-- 3D DNR -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="3D DNR" data-original-title="3D DNR - technologia redukcji szumów" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/3ddnr.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- HD -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Wysoka rozdzielczość" data-original-title="Wysoka rozdzielczość" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/hd.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Ultra HD -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Rozdzielczość Ultra HD" data-original-title="Rozdzielczość Ultra HD" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/ultrahd.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Rozdzielczość 3K -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Rozdzielczość 3K" data-original-title="Rozdzielczość 3K" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/3k.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Rozdzielczość 4K -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Rozdzielczość 4K" data-original-title="Rozdzielczość 4K" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/4k.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Rozdzielczość 8K -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Rozdzielczość 8K" data-original-title="Rozdzielczość 8K" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/8k.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- HEOP -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Platforma Hikvision Embedded Open Platform" data-original-title="Platforma Hikvision Embedded Open Platform (HEOP)" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/heop.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Maski prywatności -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Maski prywatności" data-original-title="Maski prywatności" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/masks.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Panorama -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Panoramiczny widok" data-original-title="Panoramiczny widok" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/panoramic.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Fisheye -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Obiektyw typu „rybie oko”" data-original-title="Obiektyw typu „rybie oko”" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/fisheye.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- PoE -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Power over Ethernet" data-original-title="Power over Ethernet" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/poe.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Slot microSD -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Slot na kartę microSD" data-original-title="Slot na kartę microSD" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/microsd.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Zdalna obsługa -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Zdalna obsługa" data-original-title="Zdalna obsługa" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/mobile.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- HikConnect -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Integracja z aplikacją HikConnect" data-original-title="Integracja z aplikacją HikConnect" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/hikconnect.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Tamper-free -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Opakowanie „tamper-free” z okienkiem konfiguracyjnym" data-original-title="Opakowanie „tamper-free” z okienkiem konfiguracyjnym" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/tamperfree.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Ochrona przed korozją -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Ochrona przed korozją" data-original-title="Ochrona przed korozją" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/anti-corrosion.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- Ochrona mechaniczna -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Ochrona mechaniczna IK" data-original-title="Ochrona mechaniczna IK" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/ik.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!--IP66-->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Klasa szczelności IP66" data-original-title="Klasa szczelności IP66" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/ip66.png" alt="Cechy kamery" loading="lazy">
+            </div>
+
+            <!-- IP67 -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Klasa szczelności IP67" data-original-title="Klasa szczelności IP67" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/ip67.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- IP68 -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Klasa szczelności IP68" data-original-title="Klasa szczelności IP68" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/ip68.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!--XVR ANALOG-->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Hybryda IP + Analog" data-original-title="Hybryda IP + Analog" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/analog-xvr.png" alt="Cechy rejestratora" loading="lazy">
+            </div>
+
+            <!--H.265 PRO-->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Kompresja H.265 Pro" data-original-title="Kompresja H.265 Pro" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/h265-Pro.png" alt="Cechy rejestratora" loading="lazy">
+            </div>
+
+            <!-- Smart Video Recorder -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Smart Video Recorder" data-original-title="Smart Video Recorder" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/smart-vr.png" alt="Cechy rejestratora" loading="lazy">
+            </div>
+
+            <!-- Dwukierunkowe audio -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Dwukierunkowe audio" data-original-title="Dwukierunkowe audio" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/VR-2way.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- XVR Analog -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Rejestrator hybrydowy" data-original-title="Rejestrator hybrydowy" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/xvr-hybrid.png" alt="Cechy kamery" loading="lazy" />
+            </div>
+
+            <!-- 5 w 1 -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="XVR 5 w 1" data-original-title="XVR 5 w 1" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/5in1.png" alt="Cechy rejestratora" loading="lazy">
+            </div>
+
+            <!-- RAID -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Obsługa RAID" data-original-title="Obsługa RAID" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/raid.png" alt="Cechy rejestratora" loading="lazy">
+            </div>
+
+            <!-- POS -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Obsługa funkcji POS" data-original-title="Obsługa funkcji POS" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/POS.png" alt="Cechy rejestratora" loading="lazy">
+            </div>
+
+            <!-- PIR -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Sensor PIR" data-original-title="Sensor PIR" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/pir.png" alt="Cechy urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- 4G -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Łączność bezprzewodowa 4G" data-original-title="Łączność bezprzewodowa 4G" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/4g.png" alt="Cechy urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- Dual Stream  -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Nagrywanie dwustrumieniowe" data-original-title="Nagrywanie dwustrumieniowe" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/dual-stream.png" alt="Cechy rejestratora" loading="lazy">
+            </div>
+
+            <!-- Podwójne wyjście 4K  -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Dwa wyjścia 4K" data-original-title="Dwa wyjścia 4K" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/dual_4k_output.png" alt="Cechy rejestratora" loading="lazy">
+            </div>
+
+            <!-- Smooth Streaming  -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Płynny podgląd dzięki automatycznej regulacji jakości" data-original-title="Płynny podgląd dzięki automatycznej regulacji jakości" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/smooth-streaming.png" alt="Cecha urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- AcuSearch  -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Technologia AcuSearch" data-original-title="Technologia AcuSearch" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/acusearch.png" alt="Cecha urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- AcuSeek  -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Technologia AcuSeek" data-original-title="Technologia AcuSeek" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/acuseek.png" alt="Cecha urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- ANPR  -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Rozpoznawanie tablic rejestracyjnych" data-original-title="Rozpoznawanie tablic rejestracyjnych" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/anpr.png" alt="Cecha urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- Podwójny przetwornik  -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Dwa obiektywy" data-original-title="Dwa obiektywy" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/multi_sensor.png" alt="Cecha urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- Czujnik temperatury -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Detekcja temperatury" data-original-title="Detekcja temperatury" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/temp-detection.png" alt="Cecha urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- 10 lat gwarancji -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="10 lat gwarancji" data-original-title="10 lat gwarancji" class="img-fluid cursor-pointer mx-auto d-block lazy" src="https://www.napad.pl/data/produkty/Hikvision/cechy/10lat.png" alt="Cecha urządzenia Hikvision" loading="lazy">
+            </div>
+
+            <!-- IPOX FULL COLOR -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Kolorowy obraz 24h" class="img-fluid mx-auto d-block" src="https://www.napad.pl/data/produkty/IPOX/technologie/ikony/color.png" alt="Cechy kamery">
+                <p class="text-center"><small>Full Color</small></p>
+            </div>
+
+            <!-- EAST - APFC -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Active Power Factor Correction, czyli aktywna korekcja współczynnika mocy" data-original-title="Active Power Factor Correction, czyli aktywna korekcja współczynnika mocy" class="img-fluid mx-auto d-block" src="https://www.napad.pl/data/produkty/Hikvision/cechy/east_icon_1.jpg" alt="Cechy kamery">
+            </div>
+
+            <!-- UBI PORT  -->
+            <div class="col-2 m-0 p-1">
+                <img data-toggle="tooltip" data-placement="top" data-html="true" title="Port" data-original-title="2.5GbE" class="img-fluid mx-auto d-block" src="https://www.napad.pl/data/produkty/Ubiquiti/U7-Pro-Wall/uplink.png" alt="Cechy kamery">
+                <p class="text-center"><small>Port<br>2.5GbE</small></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------------------------------------------------------------------------------------------------------------->
+    <!----- BĄBELKI DO KAMER -------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------->
+    <div class="row mx-auto col-12 px-1 pt-3 my-3 d-flex flex-column modules" style="background:#0e2948" id="bubbles">
+        <h3 class="mx-0 mt-0 mb-2 p-0 display-6 text-white text-center"><strong>Bąbelki do opisu kamer</strong></h3>
+        <div class="col-sm-2 text-center justify-content-center text-white w-100 p-0 mt-1 mb-4 mx-auto">
+            <p class="text-white text-center mb-0">Główny div z granatowym tłem:</p>
+            <span class="tekst my-0 p-0">
+                <div class="row col-sm-12 my-4 py-2 mx-auto d-flex justify-content-center rounded-175" style="background:#071e39;">
+
+                </div>
+            </span>
+            &nbsp;<button class="btn-kopiuj copy-button"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+        </div>
+        <div class="row col-sm-12 justify-content-center align-items-center" id="myDiv">
+            <!--==========================
+            =========== MODUŁY ===========
+            ===========================-->
+            <div class="row col-12 mx-auto align-items-center justify-content-center align-items-start">
+
+                <!-- Obiektyw -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Obiektyw</h2>
+                            <p class="text-center mb-0">
+                                Stałoogniskowy obiektyw <strong>2.8 mm</strong> zapewnia szerokie polem widzenia oraz <strong>światłoczułą przysłonę</strong> o aperturze <strong>F1.0</strong>.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Obiektyw - motozoom -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Obiektyw motozoom</h2>
+                            <p class="text-center mb-0">
+                                Zmiennoogniskowy obiektyw <strong>2.8 ~ 12 mm</strong> zapewnia szerokie kąty widzenia oraz umożliwia <strong>zdalną regulację ogniskowej</strong> według potrzeb.
+                            </p>
+                        </div>
+                    </span><button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+
+                <!-- Oświetlacz TYLKO IR -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Oświetlacz IR</h2>
+                            <p class="text-center mb-0">
+                                Kamera została wyposażona w jedną <strong>diodę IR LED</strong>, która umożliwia rejestrowanie obrazu na <strong>odległość&nbsp;30&nbsp;m.</strong>
+                                <!-- "w jedną diodę IR LED oraz dwie diody LED" -->
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Dualny oświetlacz -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Dualny oświetlacz</h2>
+                            <p class="text-center mb-0">
+                                Kamera posiada <strong>dwie diody IR LED</strong> oraz <strong>dwie diody LED światła białego</strong>, które umożliwiają doświetlenie obrazu na <strong>odległość 40 m.</strong>
+                                <!-- "w jedną diodę IR LED oraz dwie diody LED" -->
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- MD 2.0 -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Motion Detection 2.0</h2>
+                            <p class="text-center mb-0">
+                                <strong>Detekcja ruchu 2.0</strong> umożliwia alarmowanie tylko w przypadku wykrycia ruchu w oparciu o klasyfikację obiektu (ludzie lub pojazdy).
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Detekcja tylko człowieka -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <strong class="floatingBox">TYLKO CZŁOWIEK!</strong>
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Motion Detection 2.0</h2>
+                            <p class="text-center mb-0">
+                                <strong>Detekcja ruchu 2.0</strong> umożliwia alarmowanie tylko w przypadku wykrycia ruchu w oparciu o klasyfikację człowieka.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Kolorowy obraz w nocy -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Kolorowy obraz w nocy</h2>
+                            <p class="text-center mb-0">
+                                <strong>Wyraźny, kolorowy obraz nawet po zmroku</strong>, dzięki wbudowanemu oświetlaczowi LED, który zapewnia odpowiednie doświetlenie sceny.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- ColorVu -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">ColorVu</h2>
+                            <p class="text-center mb-0">
+                                Kamera dostarcza żywy, <strong>kolorowy obraz przez całą dobę</strong>, gwarantując doskonałą jakość nawet w trudnych warunkach oświetleniowych.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- AcuSense -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">AcuSense</h2>
+                            <p class="text-center mb-0">
+                                <strong>Algorytm AcuSense</strong> precyzyjnie rozpoznaje i&nbsp;rejestruje tylko wybrany typ obiektu (ludzie&nbsp;/&nbsp;pojazdy) eliminując fałszywe alarmy.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Jeden mikrofon -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Mikrofon</h2>
+                            <p class="text-center mb-0">
+                                <strong>Wbudowany mikrofon</strong> rejestruje dźwięk z otoczenia i przesyła go z&nbsp;obrazem zapewniając pełną rejestrację zdarzeń.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Dwa mikrofony -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Dwa mikrofony</h2>
+                            <p class="text-center mb-0">
+                                Wbudowane w kamerę <strong>dwa mikrofony</strong> umożliwiają przechwytywanie dźwięku z otoczenia i przesyłanie go wraz z obrazem.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Dwukierunkowe audio -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Dwukierunkowe audio</h2>
+                            <p class="text-center mb-0">
+                                <strong>Wbudowany głośnik i dwa mikrofony</strong> zapewniają <strong>dwukierunkową komunikację</strong> i&nbsp;przekazywanie komunikatów głosowych.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Dioda ostrzegawcza (Live Guard) -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Dioda ostrzegawcza</h2>
+                            <p class="text-center mb-0">
+                                <strong>Dodatkowa dioda LED</strong> odstrasza intruzów poprzez <strong>emitowanie migającego światła</strong> znacznie zwiększając bezpieczeństwo obszaru.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Dodatkowe złącza -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Dodatkowe złącza</h2>
+                            <p class="text-center mb-0">
+                                <strong>Złącza audio</strong> pozwalają na integrację kamery z systemem nagłośnienia PA, a <strong>wyjścia alarmowe</strong> współpracują z systemem SSWiN.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Slot microSD -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Slot microSD</h2>
+                            <p class="text-center mb-0">
+                                Kamera wyposażona jest w <strong>slot na kartę microSD</strong>, która umożliwia lokalne nagrywanie obrazu o maksymalnej pojemności <strong>do 512 GB</strong>.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Zintegrowana puszka -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Zintegrowana puszka</h2>
+                            <p class="text-center mb-0">
+                                <strong>Zintegrowana skrzynka przyłączeniowa</strong> czyni podłączenie kamery do systemu prostsze, szybsze i bezpieczniejsze.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Obudowa plastik -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <strong class="floatingBox">Plastik, IP</strong>
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Solidna obudowa</h2>
+                            <p class="text-center mb-0">
+                                Obudowa kamery wykonana jest w większości z <strong>plastiku</strong> (korpus i uchwyt) i cechuje się <strong>klasą szczelności IP67</strong>.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Obudowa plastikowy korpus + metalowy uchwyt -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <strong class="floatingBox">Plastik + metal, IP</strong>
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Solidna obudowa</h2>
+                            <p class="text-center mb-0">
+                                Obudowa kamery została wykonana z <strong>plastiku</strong> (korpus), a także metalu (uchwyt) i&nbsp;cechuje się <strong>klasą&nbsp;szczelności&nbsp;IP67</strong>.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- Obudowa metal + ik10 -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <strong class="floatingBox">Metal, IP + IK</strong>
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Solidna obudowa</h2>
+                            <p class="text-center mb-0">
+                                <strong>Metalowa obudowa</strong> zapewnia <strong>klasę szczelności IP67</strong> i&nbsp;<strong>odpornością mechaniczną&nbsp;IK10</strong>.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+
+                <!-- IP + IK + NEMA -->
+                <div class="bubble col-md-2 p-0 mx-2 mt-1 mb-5">
+                    <strong class="floatingBox">Metal, IP + IK + NEMA</strong>
+                    <span class="tekst p-0 m-0">
+                        <div class="col-sm-6 col-md-3 text-center bg-white p-4 m-2 rounded-150">
+                            <h2 class="mt-1 mb-2">Solidna obudowa</h2>
+                            <p class="text-center mb-0">
+                                <strong>Metalowa obudowa</strong> zapewnia <strong>klasę szczelności IP67</strong>, <strong>odporność mechaniczną IK10</strong> oraz <strong>ochroną antykorozyjną (NEMA 4X)</strong>.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+                <!--===================================
+            =========== MODUŁY - koniec ===========
+            ====================================-->
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------------------------------------------------------------------------------------------------------------->
+    <!----- GENERATOR CIĄGÓW W SPEC ------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------->
+    <div class="row mx-auto col-12 p-3 border my-3 bg-white justify-content-start" id="ciagi">
+        <div class="col-12 mx-auto text-center mb-5">
+            <h2><strong>Generator ciągów</strong></h2>
+            <p class="my-1 text-gray">Tworzy kopiowalny ciąg funkcji wybranych checkboxem. Zachowuje kolejnośc góra &rarr; dół.</p>
+        </div>
+        <div class="lista-ciagow col-sm-4">
+            <h5 class="mb-2"><strong>Funkcje ogólne:</strong></h5>
+            <p><label><input type="checkbox" value="Anti-banding"><span>Anti-banding</span></label></p>
+            <p><label><input type="checkbox" value="heartbeat"><span>heartbeat</span></label></p>
+            <p><label><input type="checkbox" value="odbicie lustrzane"><span>odbicie lustrzane</span></label></p>
+            <p><label><input type="checkbox" value="resetowanie hasła przez e-mail"><span>resetowanie hasła przez e-mail</span></label></p>
+            <p><label><input type="checkbox" value="ochrona hasła"><span>ochrona hasła</span></label></p>
+            <p><label><input type="checkbox" value="rejestr zdarzeń"><span>rejestr zdarzeń</span></label></p>
+            <p><label><input type="checkbox" value="licznik pikseli"><span>licznik pikseli</span></label></p>
+            <p><label><input type="checkbox" value="znak wodny"><span>znak wodny</span></label></p>
+        </div>
+
+        <div class="lista-ciagow col-sm-4">
+            <h5 class="mb-2"><strong>Metody powiadomień:</strong></h5>
+            <p><label><input type="checkbox" value="Przesyłanie na NAS / kartę pamięci / FTP"><span>Przesyłanie na NAS / kartę pamięci / FTP</span></label></p>
+            <p><label><input type="checkbox" value="wyślij e-mail"><span>wyślij e-mail</span></label></p>
+            <p><label><input type="checkbox" value="powiadom centrum nadzoru"><span>powiadom centrum nadzoru</span></label></p>
+            <p><label><input type="checkbox" value="rozpocznij nagrywanie"><span>rozpocznij nagrywanie</span></label></p>
+            <p><label><input type="checkbox" value="rozpocznij przechwytywanie"><span>rozpocznij przechwytywanie</span></label></p>
+            <p><label><input type="checkbox" value="uruchom wyjście alarmowe"><span>uruchom wyjście alarmowe</span></label></p>
+            <p><label><input type="checkbox" value="ostrzeżenie dźwiękowe"><span>ostrzeżenie dźwiękowe</span></label></p>
+            <p><label><input type="checkbox" value="miganie białym światłem"><span>miganie białym światłem</span></label></p>
+            <p><label><input type="checkbox" value="działania PTZ (takie jak ustawienia wstępne, skanowanie patrolu, skanowanie wzorca)"><span>działania PTZ (takie jak ustawienia wstępne, skanowanie patrolu, skanowanie wzorca)</span></label></p>
+        </div>
+
+        <div class="row col-12 mx-auto text-center justify-content-center flex-column mt-4">
+            <div class="col-12 row mx-auto">
+                <!--                <button id="generateBtn" class="genBtn my-1">Generuj ciąg</button>-->
+                <div class="rodzic col-12 mx-auto text-center justify-content-center">
+                    <p class="tekst mx-auto col-sm-12 mt-3" style="width:fit-content;" id="result"><span class="text-gray">Tu pojawią się zaznaczone elementy</span></p>
+                    <button class="btn-kopiuj bg-primary text-white px-3 py-2 mx-auto mt-1" id="copyBtn"><i class="far fa-copy"></i>&nbsp; Kopiuj</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------->
+    <!----- MATERIAŁ WYKONANIA KAMER ------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------------->
+    <div class="row mx-auto col-12 p-4 bg-white my-3 d-flex flex-column" id="material">
+        <h2 class="text-center"><strong>Materiał wykonania kamer</strong></h2>
+        <p class="text-center my-1 text-gray">Schemat zapisywania materiału wykonania kamer w specyfikacji</p>
+        <div class="row col-12 p-0 m-0">
+            <div class="col-sm-4 m-0 p-2">
+                <h5><strong>Tubowe</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <span class="tekst">
+                        <p>Front wokół obiektywu: plastik</p>
+                        <p>Korpus kamery: plastik</p>
+                        <p>Uchwyt: metal</p>
+                        Daszek: metal
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-sm-4 m-0 p-2">
+                <h5><strong>Turret</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <span class="tekst">
+                        <p>Front wokół obiektywu: plastik</p>
+                        <p>Część kulista: metal</p>
+                        <p>Uchwyt części kulki: plastik</p>
+                        <!--<p>Pierścień ozdobny: plastik</p>-->
+                        Pierścień montażowy: plastik
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-sm-4 m-0 p-2">
+                <h5><strong>Dome</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <span class="tekst">
+                        <p>Klosz: plastik</p>
+                        <p>Korpus kamery: metal</p>
+                        Podstawa montażowa: metal
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------->
+    <!----- CECHY MONITORÓW --------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------->
+    <div class="row col-12 mx-auto bg-white p-4 my-3 text-center pb-3" id="monitory">
+        <h2 class="mx-auto"><strong>Cechy monitorów</strong></h2>
+        <div class="row mt-2 d-flex justify-content-center">
+            <div class="col-12 text-center mb-3">
+                <p class="text-gray">Klikamy <i class="far fa-copy"></i> pod wybraną cechą - do schowka dostajemy HTML ikonka+opis wybranej cechy, którą wklejamy <strong>do poniższego diva &darr;</strong>&nbsp;, a następnie całość do opisu.</p>
+
+                <textarea name="" id="" cols="90" rows="5" class="p-2 mx-0 my-3 text-left">
+<div class="col-sm-12 col-md-6 col-xl-3 mx-0 my-1 px-2 justify-content-center text-center">
+    <div class="bg-white border rounded-100 shadow-sm mb-2 h-100">
+        <!-- tu wklejamy --> 
+    </div>
+</div>
+</textarea>
+            </div>
+            <div class="row col-sm-12 justify-content-between">
+                <!-- Rozdzielczość 4K -->
+                <div class="test col-sm-1 mx-1 my-1">
+                    <span class="tekst overflow-hidden">
+                        <img class="img-fluid my-1 img-zoom-1 lazy" src="https://www.napad.pl/data/produkty/monitory/4k.jpg" alt="Rozdzielczość 4K" loading="lazy">
+                        <h3 class="">Rozdzielczość 4K</h3>
+                        <hr class="w-25 my-2">
+                        <p class="py-0 px-3 mb-0">
+                            Rozdzielczość <strong>4K UHD</strong> (3840&#215;2160) z matrycą <strong>VA</strong> oznacza doskonały obraz.
+                        </p>
+                    </span>
+                    <button class="btn-kopiuj copy-button"><i class="far fa-copy"></i></button>
+                </div>
+
+
+                <!-- Rozdzielczość FullHD -->
+                <div class="test col-sm-1 mx-1 my-1">
+                    <span class="tekst overflow-hidden">
+                        <img class="img-fluid my-1 img-zoom-1 lazy" src="https://www.napad.pl/data/produkty/monitory/fhd.jpg" alt="Rozdzielczość FullHD" loading="lazy">
+                        <h3 class="">Rozdzielczość FullHD</h3>
+                        <hr class="w-25 my-2">
+                        <p class="py-0 px-3 mb-0">
+                            Rozdzielczość <strong>FullHD</strong> (1920&#215;1080) z matrycą <strong>VA</strong> oznacza doskonały obraz.
+                        </p>
+                    </span>
+                    <button class="btn-kopiuj copy-button"><i class="far fa-copy"></i></button>
+                </div>
+
+                <!-- Praca 24/7 -->
+                <div class="test col-sm-1 mx-1 my-1">
+                    <span class="tekst overflow-hidden">
+                        <img class="img-fluid my-1 img-zoom-1 lazy" src="https://www.napad.pl/data/produkty/monitory/24h7.jpg" alt="Praca 24/7" loading="lazy">
+                        <h3 class="">Praca 24/7</h3>
+                        <hr class="w-25 my-2">
+                        <p class="py-0 px-3 mb-0">
+                            Przystosowany do <strong>całodobowej pracy 24/7</strong> co czyni go idealnym elementem systemów CCTV.
+                        </p>
+                    </span>
+                    <button class="btn-kopiuj copy-button"><i class="far fa-copy"></i></button>
+                </div>
+
+                <!-- Przekątna obrazu -->
+                <div class="test col-sm-1 mx-1 my-1">
+                    <span class="tekst overflow-hidden">
+                        <img class="img-fluid my-1 img-zoom-1 lazy" src="https://www.napad.pl/data/produkty/monitory/screen-size.jpg" alt="Przekątna obrazu" loading="lazy">
+                        <h3 class="">Przekątna obrazu</h3>
+                        <hr class="w-25 my-2">
+                        <p class="py-0 px-3 mb-0">
+                            W prezentowanym monitorze przekątna obrazu wynosi <strong>55 cali</strong>.
+                        </p>
+                    </span>
+                    <button class="btn-kopiuj copy-button"><i class="far fa-copy"></i></button>
+                </div>
+
+                <!-- Podświetlenie LED -->
+                <div class="test col-sm-1 mx-1 my-1">
+                    <span class="tekst overflow-hidden">
+                        <img class="img-fluid my-1 img-zoom-1 lazy" src="https://www.napad.pl/data/produkty/monitory/led.jpg" alt="Podświetlenie LED" loading="lazy">
+                        <h3 class="">Podświetlenie LED</h3>
+                        <hr class="w-25 my-2">
+                        <p class="py-0 px-3 mb-0">
+                            Podświetlenie <strong>LED</strong> zapewnia realistyczne kolory przy mniejszym zużyciu energii.
+                        </p>
+                    </span>
+                    <button class="btn-kopiuj copy-button"><i class="far fa-copy"></i></button>
+                </div>
+
+
+                <!-- Kąty widzenia -->
+                <div class="test col-sm-1 mx-1 my-1">
+                    <span class="tekst overflow-hidden">
+                        <img class="img-fluid my-1 img-zoom-1 lazy" src="https://www.napad.pl/data/produkty/monitory/178view.jpg" alt="Szerokie kąty widzenia" loading="lazy">
+                        <h3 class="">Szerokie kąty widzenia</h3>
+                        <hr class="w-25 my-2">
+                        <p class="py-0 px-3 mb-0">
+                            Kąty widzenia w monitorze wynoszą <strong>178&deg;</strong> - zarówno w pionie, jak i w poziomie.
+                        </p>
+                    </span>
+                    <button class="btn-kopiuj copy-button"><i class="far fa-copy"></i></button>
+                </div>
+
+
+                <!-- VESA -->
+                <div class="test col-sm-1 mx-1 my-1">
+                    <span class="tekst overflow-hidden">
+                        <img class="img-fluid my-1 img-zoom-1 lazy" src="https://www.napad.pl/data/produkty/monitory/vesa.jpg" alt="Standard VESA" loading="lazy">
+                        <h3 class="">VESA</h3>
+                        <hr class="w-25 my-2">
+                        <p class="py-0 px-3 mb-0">
+                            Możliwość montażu na dowolnym uchwycie zgodnym ze standardem <strong>VESA 200x200</strong>.
+                        </p>
+                    </span>
+                    <button class="btn-kopiuj copy-button"><i class="far fa-copy"></i></button>
+                </div>
+
+                <!-- Wejścia - HDMI + DP -->
+                <div class="test col-sm-1 mx-1 my-1">
+                    <span class="tekst overflow-hidden">
+                        <img class="img-fluid my-1 img-zoom-1 lazy" src="https://www.napad.pl/data/produkty/monitory/hdmi-dp.jpg" alt="Wejścia wideo" loading="lazy">
+                        <h3 class="">Dostępne złącza</h3>
+                        <hr class="w-25 my-2">
+                        <p class="py-0 px-3 mb-0">
+                            Obraz może być przesyłany poprzez wbudowane złącza <strong>DisplayPort</strong>, <strong>HDMI</strong> lub <strong>VGA</strong>.
+                        </p>
+                    </span>
+                    <button class="btn-kopiuj copy-button"><i class="far fa-copy"></i></button>
+                </div>
+
+                <!-- Wejścia - HDMI + VGA -->
+                <div class="test col-sm-1 mx-1 my-1">
+                    <span class="tekst overflow-hidden">
+                        <img class="img-fluid my-1 img-zoom-1 lazy" src="https://www.napad.pl/data/produkty/monitory/hdmi-vga.jpg" alt="Wejścia wideo" loading="lazy">
+                        <h3 class="">Wejścia wideo</h3>
+                        <hr class="w-25 my-2">
+                        <p class="py-0 px-3 mb-0">
+                            Obraz może być przesyłany poprzez wbudowane złącza <strong>HDMI</strong> lub <strong>VGA</strong>.
+                        </p>
+                    </span>
+                    <button class="btn-kopiuj copy-button"><i class="far fa-copy"></i></button>
+                </div>
+
+                <!-- Audio -->
+                <div class="test col-sm-1 mx-1 my-1">
+                    <span class="tekst overflow-hidden">
+                        <img class="img-fluid my-1 img-zoom-1 lazy" src="https://www.napad.pl/data/produkty/monitory/audio.jpg" alt="Audio" loading="lazy">
+                        <h3 class="">Audio</h3>
+                        <hr class="w-25 my-2">
+                        <p class="py-0 px-3 mb-0">
+                            Monitor wyposażony został w wysokiej jakości <strong>głośniki stereo</strong> o mocy 10W.
+                        </p>
+                    </span>
+                    <button class="btn-kopiuj copy-button"><i class="far fa-copy"></i></button>
+                </div>
+
+                <!-- Filtr światła niebieskiego -->
+                <div class="test col-sm-1 mx-1 my-1">
+                    <span class="tekst overflow-hidden">
+                        <img class="img-fluid my-1 img-zoom-1 lazy" src="https://www.napad.pl/data/produkty/monitory/bluelight.jpg" alt="Filtr światła niebieskiego" loading="lazy">
+                        <h3 class="">Filtr ochrony oczu</h3>
+                        <hr class="w-25 my-2">
+                        <p class="py-0 px-3 mb-0">
+                            <strong>Funkcja ochrony oczu</strong> zmniejsza emisję szkodliwego niebieskiego światła.
+                        </p>
+                    </span>
+                    <button class="btn-kopiuj copy-button"><i class="far fa-copy"></i></button>
+                </div>
+
+                <!-- Wąska ramka -->
+                <div class="test col-sm-1 mx-1 my-1">
+                    <span class="tekst overflow-hidden">
+                        <img class="img-fluid my-1 img-zoom-1 lazy" src="https://www.napad.pl/data/produkty/monitory/bezel.jpg" alt="Wąska ramka" loading="lazy">
+                        <h3 class="">Wąska ramka</h3>
+                        <hr class="w-25 my-2">
+                        <p class="py-0 px-3 mb-0">
+                            Wąska ramka wokół wyświetlacza nadaje monitorowi nowoczesny i estetyczny wygląd.
+                        </p>
+                    </span>
+                    <button class="btn-kopiuj copy-button"><i class="far fa-copy"></i></button>
+                </div>
+            </div>
+            <!--===================================
+            =========== MODUŁY - koniec ===========
+            ====================================-->
+        </div>
+    </div>
+
+
+
+    <!------------------------------------------------------------------------------------------------------------->
+    <!----- TAGI WYSZUKIWANIA ------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------->
+    <div class="row mx-auto col-12 p-4 border my-3 d-flex bg-white flex-column" id="tagi">
+        <h2 class="text-center" id="tagi"><strong>Tagi wyszukiwania</strong></h2>
+
+        <!-- Kamery -->
+        <div class="row p-0 col-sm-12 mx-auto">
+            <div class="col-sm-4 m-0 p-2 pr-4">
+                <h5><strong>Każda kamera</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">hikvision, hikvision kamera, hikvision kamera ip, hikvision kamera sieciowa, hikvision kamera sieciowa ip, hikvision ip camera, hikvision ip, hikvision camera, kamera ip, kamera sieciowa, kamera sieciowa ip, DS-2CD, DS 2CD, DS_2CD, DS2CD</p>
+                </div>
+            </div>
+            <div class="col-sm-4 m-0 p-2 px-4">
+                <h5><strong>Bullet</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">kamera tubowa, kamera bullet, tuba</p>
+                </div>
+            </div>
+            <div class="col-sm-4 m-0 p-2 px-4">
+                <h5><strong>Turret</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">kamera kopułkowa, kamera turret, kamera kopułka, kopułka, kopulka, kopulkowa, turret</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Switche -->
+        <div class="row p-0 col-sm-12 mx-auto">
+            <div class="col-sm-4 m-0 p-2 pr-4">
+                <h5><strong>Każdy switch</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">switch, przełącznik, hikvision, switch PoE, switch zarządzalny, switch przemysłowy, switch do monitoringu, hikvision network switch, switch ethernet, switch Gigabit, switch Layer 2</p>
+                </div>
+            </div>
+            <div class="col-sm-4 m-0 p-2 pr-4">
+                <h5><strong>Instrukcja obsługi switch gigabit</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">manual, instrukcja, instrukcja obsługi, guide, switch, przełącznik, hikvision, gigabit, poe, zarządzalny switch, porty gigabit, konfiguracja switch, zarządzanie switch, restart switch, obsługa switch gigabit, konfiguracja vlan, hasło switch, admin switch, protokół poe, zabezpieczenia switch</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seria EasyIP 4.0 Plus -->
+        <div class="row p-0 col-sm-12 mx-auto">
+            <div class="col-sm-4 m-0 p-2 pr-4">
+                <h5><strong>EasyIP 4.0+ Series</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">easy ip 4.0+, easyip 4.0+, easyip4.0+, easyip4.0 +, easy ip 4.0 plus, easy ip 4.0+, easyip4.0 plus, easyip 4 plus, easy ip 4.0+, easy ip 4 +, easyip4+</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Audio -->
+        <div class="row p-0 col-sm-12 mx-auto">
+            <div class="col-sm-4 m-0 p-2 pr-4">
+                <h5><strong>Głośniki IP</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">hikvision, głośnik, speaker, głośnik ip, ip speaker, hikvision speaker, ip głośnik, public address, public address ip, audio ip, system audio ip</p>
+                </div>
+            </div>
+        </div>
+        <hr class="border-f1f1f1 p-1 mx-0 my-4 w-100">
+
+        <!-- IVMS -->
+        <div class="row p-0 col-sm-12 mx-auto">
+            <div class="col-sm-3 m-0 p-2 pr-4">
+                <h5><strong>IVMS Instrukcja PL+ENG</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">instrukcja obsługi iVMS-4200, instrukcja obsługi iVMS 4200, instrukcja obsługi iVMS_4200, instrukcja obsługi iVMS4200, instrukcja obsługi-iVMS-4200, instrukcja obsługi-iVMS_4200, instrukcja obsługi-iVMS4200, instrukcja obsługi_iVMS-4200, instrukcja obsługi_iVMS_4200, instrukcja obsługi_iVMS4200, manual iVMS-4200, manual iVMS 4200, manual iVMS_4200, manual iVMS4200, manual-iVMS-4200, manual-iVMS_4200, manual-iVMS4200, manual_iVMS-4200, manual_iVMS_4200, manual_iVMS4200, iVMS-4200, iVMS 4200, iVMS_4200, iVMS4200</p>
+                </div>
+            </div>
+            <div class="col-sm-3 m-0 p-2 px-4">
+                <h5><strong>IVMS Windows</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">iVMS-4200, iVMS 4200, iVMS4200, iVMS_4200, iVMS.4200, program iVMS-4200, oprogramowanie iVMS-4200, platforma iVMS-4200, software iVMS-4200, firmware iVMS-4200, iVMS-4200 Windows, iVMS 4200 Windows, iVMS4200 Windows, program iVMS-4200 Windows, oprogramowanie iVMS-4200 Windows, platforma iVMS-4200 Windows, software iVMS-4200 Windows, firmware iVMS-4200 Windows</p>
+                </div>
+            </div>
+            <div class="col-sm-3 m-0 p-2 px-4">
+                <h5><strong>IVMS Mac OS</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">iVMS-4200, iVMS 4200, iVMS4200, iVMS_4200, iVMS.4200, program iVMS-4200, oprogramowanie iVMS-4200, platforma iVMS-4200, software iVMS-4200, firmware iVMS-4200, iVMS-4200 Mac, iVMS 4200 Mac, iVMS4200 Mac, program iVMS-4200 Mac, oprogramowanie iVMS-4200 Mac, platforma iVMS-4200 Mac, software iVMS-4200 Mac, firmware iVMS-4200 Mac, iVMS-4200 macOS, iVMS 4200 macOS, iVMS4200 macOS, program iVMS-4200 macOS, oprogramowanie iVMS-4200 macOS, platforma iVMS-4200 macOS, software iVMS-4200 macOS, firmware iVMS-4200 macOS</p>
+                </div>
+            </div>
+            <div class="col-sm-3 m-0 p-2 pl-4">
+                <h5><strong>IVMS Pakiet językowy</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">iVMS-4200 language pack, iVMS 4200 language pack, iVMS4200 language pack, iVMS-4200 language kit, iVMS 4200 language kit, iVMS4200 language kit, iVMS-4200 pakiet językowy, iVMS 4200 pakiet językowy, iVMS4200 pakiet językowy, iVMS-4200 pakiet jezykowy, iVMS 4200 pakiet jezykowy, iVMS4200 pakiet jezykowy, iVMS-4200 spolszczenie, iVMS 4200 spolszczenie, iVMS4200 spolszczenie, program iVMS-4200 language pack, program iVMS-4200 pakiet językowy</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-f1f1f1 p-1 mx-0 my-4 w-100">
+
+        <!-- SADP -->
+        <div class="row p-0 col-sm-12 mx-auto">
+            <div class="col-sm-6 m-0 p-2">
+                <h5><strong>SADP Tool</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">narzędzie Hikvision SADP Tool, narzędzie Hikvision SADP-Tool, narzędzie Hikvision SADPTool, narzędzia Hikvision SADP Tool, narzędzia Hikvision SADP-Tool, narzędzia Hikvision SADPTool, narzędzie do Hikvision SADP Tool, narzędzie do Hikvision SADP-Tool, narzędzie do Hikvision SADPTool, narzędzia do Hikvision SADP Tool, narzędzia do Hikvision SADP-Tool, narzędzia do Hikvision SADPTool, Hikvision SADP Tool narzędzie, Hikvision SADP-Tool narzędzie, Hikvision SADPTool narzędzie, Hikvision SADP Tool narzędzia, Hikvision SADP-Tool narzędzia, Hikvision SADPTool narzędzia, oprogramowanie narzędzie Hikvision SADP Tool, program narzędzie Hikvision SADP Tool, software narzędzie Hikvision SADP Tool</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 m-0 p-2">
+                <h5><strong>HiTools Delivery</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">HiTools Delivery, HiTools Delivery v1.5.1.0, HiTools Delivery firmware upgrade, HiTools Delivery network configuration, HiTools Delivery SADP integration, HiTools Delivery password reset, HiTools Delivery batch configuration, narzędzia HiTools Delivery, oprogramowanie HiTools Delivery, narzędzia do konfiguracji HiTools Delivery</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 m-0 p-2">
+                <h5><strong>VSPlayer</strong></h5>
+                <div class="mb-4 element-do-kopiowania">
+                    <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+                    <p class="tekst">vsplayer, vs player, vsplayer x64, vsplayer hikvision, odtwarzacz wideo hikvision, odtwarzacz nagrań monitoringu, odtwarzacz plików rtsp, program do oglądania nagrań z kamer, odtwarzacz plików h264 h265, odtwarzacz SVAC, odtwarzacz z funkcją konwersji video</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------------------------------------------------------------------------------------------------------------->
+    <!----- SEKCJE OPISOWE ---------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------->
+    <div class="row mx-auto col-12 p-3 bg-white border my-3 d-flex flex-row justify-content-center text-center" id="sekcje-opisowe">
+        <h3 class="col-12 text-center mx-auto mt-0 mb-4 p-0 display-6"><strong>Sekcje opisowe</strong></h3>
+        <div class="col-4 mx-3 my-3 p-2 border shadow rounded-125">
+            <h5>Wstępna informacja o oprogramowaniu</h5>
+            <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+            <div class="mt-4 px-4 py-2">
+                <span class="tekst text-center">
+                    <!-- Informacja o oprogramowaniu -->
+                    [DESCRIPTIVE_SECTION_62]
+                </span>
+            </div>
+        </div>
+        <div class="col-4 mx-3 my-3 p-2 border shadow rounded-125">
+            <h5>Oprogramowanie główne (bg-light)</h5>
+            <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+            <span class="tekst">
+                <div class="row bg-light justify-content-center p-3 align-items-center mt-4 tabs-equal-height rounded-175">
+                    [DESCRIPTIVE_SECTION_27]
+                </div>
+            </span>
+        </div>
+        <div class="col-4 mx-3 my-3 p-2 border shadow rounded-125">
+            <h5>Oprogramowanie główne (bez tła)</h5>
+            <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+            <span class="tekst">
+                <div class="row justify-content-center align-items-center mt-4 tabs-equal-height">
+                    [DESCRIPTIVE_SECTION_27]
+                </div>
+            </span>
+        </div>
+        <div class="col-4 mx-3 my-3 p-2 border shadow rounded-125">
+            <h5>Oprogramowanie wideodomofonów (bg-light)</h5>
+            <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+            <span class="tekst">
+                <!-- Oprogramowanie -->
+                <div class="bg-light mt-4 px-4 py-2 rounded-075">
+                    [DESCRIPTIVE_SECTION_71]
+                </div>
+            </span>
+        </div>
+        <div class="col-4 mx-3 my-3 p-2 border shadow rounded-125">
+            <h5>Oprogramowanie wideodomofonów (bez tła)</h5>
+            <button class="btn-kopiuj"><i class="far fa-copy"></i></button>
+            <span class="tekst">
+                <!-- Oprogramowanie -->
+                <div class="mt-4 px-4 py-2">
+                    [DESCRIPTIVE_SECTION_71]
+                </div>
+            </span>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------->
+    <!----- KONWERTER SPECYFIKACJI ----------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------->
+    <div class="row mx-auto col-12 p-3 bg-white mt-3 flex-row justify-content-center text-center" id="nowaSpec">
+        <div class="col-12 mb-5">
+            <h2><strong>Konwerter spec: stara → nowa</strong></h2>
+            <p class="text-gray">Aktualizuje specyfikację na nowy format, tj.:</p>
+            <ul style="text-align: left;" class="col-5 mx-auto my-2 text-gray">
+                <li class="mb-2">
+                    &lt;thead&gt;&nbsp; &#10141; &nbsp;&lt;tr class="thead"&gt;
+                </li>
+                <li class="mb-2">
+                    &lt;tbody&gt;&nbsp; &#10141; &nbsp;&lt;tr class="tbody"&gt;
+                </li>
+                <li>dodaje klasę <span class="text-primary">.last</span> do ostatniego tbody (takiego po którym jest &lt;tr class="thead"&gt;)</li>
+            </ul>
+        </div>
+        <div class="col-5">
+            <div class="spec-row">
+                <h4>Stara specyfikacja</h4>
+                <textarea class="spec-textarea" id="input" placeholder="Wklej starą tabelę HTML..."></textarea>
+                <button class="mt-2 spec-primary-btn" id="convertBtn">Aktualizuj</button>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="spec-row">
+                <h4>Nowa specyfikacja</h4>
+                <textarea class="spec-textarea" id="output" placeholder="Tutaj pojawi się nowy HTML..."></textarea>
+                <button class="mt-2 spec-copy-btn" id="copySpec">Kopiuj</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- JS -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
